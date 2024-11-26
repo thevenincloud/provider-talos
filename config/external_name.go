@@ -10,7 +10,20 @@ import "github.com/crossplane/upjet/pkg/config"
 // provider.
 var ExternalNameConfigs = map[string]config.ExternalName{
 	// Import requires using a randomly generated ID from provider: nl-2e21sda
-	"null_resource": config.IdentifierFromProvider,
+	"talos_client_configuration_data_source": config.IdentifierFromProvider,
+	"talos_cluster_health_data_source": config.IdentifierFromProvider,
+	"talos_cluster_kubeconfig_data_source": config.IdentifierFromProvider,
+	"talos_image_factory_extensions_versions_data_source": config.IdentifierFromProvider,
+	"talos_image_factory_overlays_versions_data_source": config.IdentifierFromProvider,
+	"talos_image_factory_urls_data_source": config.IdentifierFromProvider,
+	"talos_image_factory_versions_data_source": config.IdentifierFromProvider,
+	"talos_machine_configuration_data_source": config.IdentifierFromProvider,
+	"talos_machine_disks_data_source": config.IdentifierFromProvider,
+	"talos_cluster_kubeconfig": config.IdentifierFromProvider,
+	"talos_image_factory_schematic": config.IdentifierFromProvider,
+	"talos_machine_bootstrap": config.IdentifierFromProvider,
+	"talos_machine_configuration_apply": config.IdentifierFromProvider,
+	"talos_machine_secrets": config.IdentifierFromProvider,
 }
 
 // ExternalNameConfigurations applies all external name configs listed in the
